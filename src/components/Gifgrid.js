@@ -32,13 +32,16 @@ const Gifgrid = ({category}) =>{
  return(
   <>
     <h3>{category}</h3>
+    
+  <div className='cardGrid'>
       {images.map( 
        (image) => <GiftItem
        key={image.id} 
        title={image.title} 
        url={image.url} />
       )}
-  </>
+  </div>
+  </> 
  );
 }
 
